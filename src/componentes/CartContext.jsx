@@ -1,12 +1,12 @@
   
-import {createContext, useEffect, useState} from 'react'
+import {createContext} from 'react'
 import { db } from "../firebase/Firebase"
 
 
 export const CartContext = createContext();
 
 export const CartProvider = ({children}) => {
-    const [quantity, setQuantity] = useState(0);
+    //const [quantity, setQuantity] = useState(0);
  
 // Obtengo el llamado a la base de datos de Firebase de Colleccion "Pedidos"
     const LoadProductById = async (id) => {
@@ -14,9 +14,9 @@ export const CartProvider = ({children}) => {
         return response.data();
     }
 
-    /**
+    /**-----------------------------------------------------------------------
      * TODO : Solucionar el número que se muestra en ícono del CartWidget.
-     */
+     
     
     useEffect(() => {
         const cantidadCarrito = JSON.parse(localStorage.getItem('carrito'))
@@ -26,10 +26,10 @@ export const CartProvider = ({children}) => {
             setQuantity()
     }, [])
     console.log(quantity)
-    
+    --------------------------------------------------------------------------*/
 
     return (
-        <CartContext.Provider value={{ LoadProductById, quantity }}>
+        <CartContext.Provider value={{ LoadProductById }}>
             {children}
         </CartContext.Provider>
     )
