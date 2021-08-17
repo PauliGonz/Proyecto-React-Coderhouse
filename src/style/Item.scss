@@ -1,0 +1,53 @@
+.card{
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.132);
+    color: grey;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px lightgray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    margin-left: 60px;
+    h3{
+        color: black;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0px 20px;
+    }
+    h6{
+        padding: 0px 20px;
+    }
+    b{
+        color: black;
+    }
+    p{
+        font-size: 2em;
+        font-weight: bold;
+        color: goldenrod;
+        margin: 5px 0px 5px 0px;
+    }
+    .btn{
+        margin-top: 10px;
+        
+    }
+}
+.card:hover{
+    transition: 1000ms;
+    transform: scale(1.05);
+}
+.contenedorImagen{
+    width: 100%;
+    height: 180%;
+    display: flex;
+}
+.imagen{
+    width: 80%;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.estrellas{
+    width: 30%;
+}

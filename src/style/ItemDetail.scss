@@ -1,0 +1,43 @@
+.cardItemDetail {
+    width: 850px;
+    height: 300px;
+    background-color: rgba(0, 255, 255, 0.132);
+    border: 4px solid #34dbf8;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    .cardDetail{
+           width: 350px;
+           margin: 20px;
+       }
+    .card-img-top{
+        width: 70%;
+        height: 100%;
+    }
+    h4{
+        color: black;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0px 20px;
+    }
+    .priceItem{
+        font-size: 2em;
+        font-weight: bold;
+        color: goldenrod;
+        margin: 10px 20px 0px 30px;
+    }
+    button{
+        margin: 5px;
+    }
+
+    .numeroContador{
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(6, 183, 242);
+        padding: 0px 30px 0px 30px;
+        margin-top: 5px;
+    }
+}
+
